@@ -14,6 +14,7 @@ $allowedRoots = @(
     'tradex-autosave.ps1',
     'tradex-global.css',
     'tradex-learning.css',
+    'tradex-app.css',
     'stock-option-demo.css',
     'workspace stock market.code-workspace',
     '100 most popular/',
