@@ -31,6 +31,7 @@ $allowedRoots = @(
     'numbers/',
     'practice/',
     'rewards/',
+    'explore/',
     'images/',
     'IPO Access/',
     'Newly listed crypto/',
