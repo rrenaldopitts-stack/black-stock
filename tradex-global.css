@@ -29,6 +29,10 @@ html {
     scroll-padding-top: var(--tradex-anchor-offset);
 }
 
+html#page-top:target {
+    scroll-behavior: auto;
+}
+
 body {
     margin: 0;
     min-width: 0;
