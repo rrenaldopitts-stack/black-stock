@@ -238,6 +238,88 @@ main :is(h1, h2, h3, p, a, summary, legend, label, dt, dd) {
     gap: 18px;
 }
 
+.tx-mentor {
+    display: grid;
+    grid-template-columns: minmax(150px, 0.6fr) minmax(0, 2fr);
+    gap: clamp(20px, 4vw, 42px);
+    margin-top: 32px;
+    padding: clamp(20px, 4vw, 38px);
+    border: 1px solid #00e5e566;
+    border-radius: 18px;
+    background:
+        linear-gradient(#00e5e506 1px, transparent 1px),
+        linear-gradient(90deg, #00e5e506 1px, transparent 1px),
+        radial-gradient(ellipse at 0% 50%, #00e5e514, transparent 60%),
+        var(--tradex-surface, #101010);
+    background-size: 28px 28px, 28px 28px, auto, auto;
+    box-shadow: inset 0 0 30px #00e5e505, 0 12px 30px #0005;
+}
+
+.tx-mentor-core {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 18px;
+    text-align: center;
+}
+
+.tx-mentor-orb {
+    display: grid;
+    width: min(100%, 160px);
+    aspect-ratio: 1;
+    place-items: center;
+    border: 1px solid var(--tradex-accent, cyan);
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, #00e5e529 25%, transparent 26% 43%, #00e5e533 44% 45%, transparent 46%),
+        repeating-conic-gradient(#00e5e54d 0deg 2deg, transparent 2deg 30deg);
+    box-shadow: 0 0 30px #00e5e51a, inset 0 0 25px #00e5e51a;
+    color: var(--tradex-accent, cyan);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.tx-mentor h2 {
+    margin: 8px 0 14px;
+    color: var(--tradex-text, white);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.25;
+}
+
+.tx-mentor p {
+    color: var(--tradex-muted, #b8c8d0);
+}
+
+.tx-mentor details {
+    margin-top: 12px;
+    padding: 14px;
+    border: 1px solid #00e5e533;
+    border-radius: 8px;
+    background: #050505b3;
+}
+
+.tx-mentor summary {
+    color: var(--tradex-accent, cyan);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tx-mentor details a {
+    color: var(--tradex-accent, cyan);
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .tx-mentor {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .tx-mentor-orb {
+        width: 110px;
+    }
+}
+
 .tx-mission-map {
     margin-top: 32px;
     padding: clamp(18px, 3vw, 28px);
