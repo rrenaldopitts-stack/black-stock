@@ -19,7 +19,7 @@
         <nav class="navbar" aria-label="Main navigation">
             <div class="logo"><a href="../homepage/homepage.html" aria-label="TradeX home">TradeX</a></div>
             <span class="learning-label">Culture. Community. Ownership.</span>
-            <ul class="nav-list"><li><a href="../homepage/homepage.html">Home</a></li><li><a href="../stock market/stock market project.html">Learn</a></li><li><a href="../culture/culture.html#culture">Culture</a></li><li><a href="../homepage/homepage.html#rewards">Rewards</a></li><li><a href="../numbers/numbers.html">Numbers</a></li><li><a href="../ETF.html/etf.html">ETFs</a></li><li><a href="../homepage/homepage.html#stock-options-heading" aria-current="page">Explore</a></li><li><a href="../dashboard/tradex-theme.html">Dashboard</a></li></ul>
+            <ul class="nav-list"><li><a href="../homepage/homepage.html">Home</a></li><li><a href="../stock market/stock market project.html">Learn</a></li><li><a href="../culture/culture.html#culture">Culture</a></li><li><a href="../numbers/numbers.html">Numbers</a></li><li><details class="tx-more"><summary>More</summary><div class="tx-more-links"><p>Explore TradeX</p><a href="../homepage/homepage.html#rewards">Rewards</a><a href="../ETF.html/etf.html">ETFs</a><a href="../homepage/homepage.html#stock-options-heading" aria-current="page">Explore</a><a href="../dashboard/tradex-theme.html">Dashboard</a></div></details></li></ul>
 
         </nav>
     </div>
@@ -31,16 +31,22 @@
         <section class="tx-journey" aria-labelledby="journey-heading">
             <div class="tx-chapter">
                 <p class="tx-eyebrow">TradeX learning journey / Your pace, your path</p>
-                <h2 id="journey-heading">IPO Access / Your research journey</h2>
+                <h1 id="journey-heading">IPO Access / Your research journey</h1>
                 <div class="tx-chapter-track" aria-hidden="true"><span></span><span></span><span></span></div>
-                <p class="tx-small">3 learning stops. Choose any stop below. This map does not track completion or save progress.</p>
+                <p class="tx-small">3 learning stops. Select a numbered node, then Continue. This map does not track completion or save progress.</p>
             </div>
             <ol class="tx-journey-path">
-                <li><span class="tx-journey-node" aria-hidden="true">01</span><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 01</p><h3>Start with the context</h3><p>Connect culture and curiosity to thoughtful research.</p><a class="tx-button" href="#culture-lab-heading" aria-label="Continue to Start with the context">Continue &rarr;</a></article></li>
-                <li><span class="tx-journey-node" aria-hidden="true">02</span><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 02</p><h3>Understand the numbers</h3><p>Read a fictional price, not a live quote.</p><a class="tx-button" href="#stock-name" aria-label="Continue to Understand the numbers">Continue &rarr;</a></article></li>
-                <li><span class="tx-journey-node" aria-hidden="true">03</span><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 03</p><h3>Try the learning scenario</h3><p>Choose understanding over pressure to trade.</p><a class="tx-button" href="#culture-scenario" aria-label="Continue to Try the learning scenario">Continue &rarr;</a></article></li>
+                <li id="journey-stop-1"><a class="tx-journey-node" href="#journey-stop-1" aria-label="Show learning stop 1">01</a><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 01</p><h3>Start with the context</h3><p>Connect culture and curiosity to thoughtful research.</p><a class="tx-button" href="#culture-lab-heading" aria-label="Continue to Start with the context">Continue &rarr;</a></article></li>
+                <li id="journey-stop-2"><a class="tx-journey-node" href="#journey-stop-2" aria-label="Show learning stop 2">02</a><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 02</p><h3>Understand the numbers</h3><p>Read a fictional price, not a live quote.</p><a class="tx-button" href="#stock-name" aria-label="Continue to Understand the numbers">Continue &rarr;</a></article></li>
+                <li id="journey-stop-3"><a class="tx-journey-node" href="#journey-stop-3" aria-label="Show learning stop 3">03</a><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 03</p><h3>Try the learning scenario</h3><p>Choose understanding over pressure to trade.</p><a class="tx-button" href="#culture-scenario" aria-label="Continue to Try the learning scenario">Continue &rarr;</a></article></li>
             </ol>
         </section>
+        <div class="tx-workspace">
+            <nav class="tx-view-nav" aria-label="Learning workspace views">
+                <a href="#lesson-view">Lesson</a><a href="#check-view">Knowledge check</a><a href="#practice-view">Practice example</a>
+            </nav>
+            <section class="tx-view-panel tx-view-lesson" id="lesson-view" aria-labelledby="lesson-view-heading">
+                <h2 id="lesson-view-heading">Learn the idea</h2>
         <section class="tx-culture-lab" aria-labelledby="culture-lab-heading">
             <div class="tx-culture-lab-copy">
                 <p class="tx-eyebrow">Black culture / IPO Access / Your learning lens</p>
@@ -50,11 +56,36 @@
                 <div class="tx-actions"><a class="tx-button tx-button-secondary" href="#culture-scenario">Try the scenario &rarr;</a></div><a href="../culture/culture.html#community-circle">Bring a question to the knowledge circle &rarr;</a>
             </div>
         </section>
+                <div class="tx-actions"><a class="tx-button" href="#check-view">Try the knowledge check &rarr;</a></div>
+            </section>
+            <section class="tx-view-panel tx-view-check" id="check-view" aria-labelledby="check-view-heading">
+                <h2 id="check-view-heading">Check your understanding</h2>
+        <section class="tx-card tx-scenario" id="culture-scenario" aria-labelledby="scenario-heading" data-scenario-id="ipo">
+            <p class="tx-eyebrow">Culture-to-capital / Scenario 09</p>
+            <h2 id="scenario-heading">Put your perspective into practice.</h2>
+            <p class="tx-scenario-intro">An imagined conversation, a real learning skill. Choose the response that puts understanding before pressure.</p>
+            <fieldset class="tx-quiz" data-quiz-id="ipo" data-progress-kind="scenario">
+                <legend>A Black founder&#x27;s journey inspires you. Their business is preparing an IPO. What keeps your investment research grounded?</legend>
+                <label class="tx-answer"><input class="tx-correct" type="radio" name="culture-scenario-answer" value="understood">Read the prospectus, finances, share terms, and risks while appreciating the founder&#x27;s story.</label><label class="tx-answer"><input class="tx-incorrect" type="radio" name="culture-scenario-answer" value="retry">Assume an inspiring founder means the offering price cannot fall.</label>
+                <p class="tx-feedback tx-feedback-retry">Take another look. Representation and inspiration matter, but they cannot guarantee a business&#x27;s financial results or its share price. You can try the other response.</p>
+                <p class="tx-feedback tx-feedback-correct">That's a thoughtful response. Representation and inspiration matter, but they cannot guarantee a business&#x27;s financial results or its share price.</p>
+            </fieldset>
+            <div class="tx-scenario-reward" data-badge-id="ipo">
+                <span class="tx-badge">LEARNING BADGE / Founder-story discernment</span>
+                <p>You built understanding, not a trading streak. Pass along the idea in your own words, without telling someone what to buy.</p>
+            </div>
+            <p class="tx-small">Unlimited retries. Badge appears for a correct answer on this page only; it has no cash value and is not saved when you leave or reload.</p>
+        </section>
+
+                <div class="tx-actions"><a class="tx-button tx-button-secondary" href="#lesson-view">Review the lesson</a><a class="tx-button" href="#practice-view">Explore a practice example &rarr;</a></div>
+            </section>
+            <section class="tx-view-panel tx-view-practice" id="practice-view" aria-labelledby="practice-view-heading">
+                <h2 id="practice-view-heading">Practice without real trades</h2>
 
         <p class="option-demo-notice" role="note">Fictional pre-IPO example — all company and pricing information is mock data, not an actual offering.</p>
         <section class="option-demo-card" aria-labelledby="stock-name" data-symbol="LFRG" data-price="24.50" data-change="0.50">
             <div class="option-demo-overview">
-                <div><p class="option-demo-eyebrow">IPO Access · Fictional offering</p><h1 id="stock-name">LumaForge Robotics</h1><p class="option-demo-symbol" id="stock-symbol">LFRG <span>DEMO</span></p></div>
+                <div><p class="option-demo-eyebrow">IPO Access · Fictional offering</p><h2 id="stock-name">LumaForge Robotics</h2><p class="option-demo-symbol" id="stock-symbol">LFRG <span>DEMO</span></p></div>
                 <div class="option-demo-quote"><p class="option-demo-price" id="stock-price">$24.50</p><p class="option-demo-change positive" id="stock-change">+$0.50 (2.08%) sample</p></div>
             </div>
             <section class="option-demo-chart-section" aria-labelledby="chart-heading">
@@ -89,23 +120,9 @@
             <p><a href="../stock market/stock market project.html#risk">Learn about risk</a> &middot; <a href="../homepage/homepage.html#stock-options-heading">Explore another category</a></p>
         </section>
     
-        <section class="tx-card tx-scenario" id="culture-scenario" aria-labelledby="scenario-heading" data-scenario-id="ipo">
-            <p class="tx-eyebrow">Culture-to-capital / Scenario 09</p>
-            <h2 id="scenario-heading">Put your perspective into practice.</h2>
-            <p class="tx-scenario-intro">An imagined conversation, a real learning skill. Choose the response that puts understanding before pressure.</p>
-            <fieldset class="tx-quiz" data-quiz-id="ipo" data-progress-kind="scenario">
-                <legend>A Black founder&#x27;s journey inspires you. Their business is preparing an IPO. What keeps your investment research grounded?</legend>
-                <label class="tx-answer"><input class="tx-correct" type="radio" name="culture-scenario-answer" value="understood">Read the prospectus, finances, share terms, and risks while appreciating the founder&#x27;s story.</label><label class="tx-answer"><input class="tx-incorrect" type="radio" name="culture-scenario-answer" value="retry">Assume an inspiring founder means the offering price cannot fall.</label>
-                <p class="tx-feedback tx-feedback-retry">Take another look. Representation and inspiration matter, but they cannot guarantee a business&#x27;s financial results or its share price. You can try the other response.</p>
-                <p class="tx-feedback tx-feedback-correct">That's a thoughtful response. Representation and inspiration matter, but they cannot guarantee a business&#x27;s financial results or its share price.</p>
-            </fieldset>
-            <div class="tx-scenario-reward" data-badge-id="ipo">
-                <span class="tx-badge">LEARNING BADGE / Founder-story discernment</span>
-                <p>You built understanding, not a trading streak. Pass along the idea in your own words, without telling someone what to buy.</p>
-            </div>
-            <p class="tx-small">Unlimited retries. Badge appears for a correct answer on this page only; it has no cash value and is not saved when you leave or reload.</p>
-        </section>
-
+                <div class="tx-actions"><a class="tx-button tx-button-secondary" href="#check-view">Return to the knowledge check</a></div>
+            </section>
+        </div>
         <nav class="tx-mission-map" aria-labelledby="mission-map-heading">
             <p class="tx-eyebrow" id="mission-map-heading">Your next quest / Knowledge before trading</p>
             <div class="tx-mission-links">
