@@ -25,6 +25,7 @@ $allowedRoots = @(
     'Energy/',
     'ETF.html/',
     'homepage/',
+    'culture/',
     'images/',
     'IPO Access/',
     'Newly listed crypto/',
