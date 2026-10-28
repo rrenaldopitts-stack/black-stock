@@ -416,6 +416,30 @@ body.tx-app {
     font-size: clamp(1.9rem, 4vw, 3rem);
 }
 
+.tx-app .tx-home-community {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 20px;
+}
+
+.tx-community-art {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+@media (max-width: 700px) {
+    .tx-app .tx-home-community {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .tx-community-art {
+        max-height: 150px;
+    }
+}
+
 .tx-app .stock-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
