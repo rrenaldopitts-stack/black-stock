@@ -1,3 +1,4 @@
+# Scheduled runs use tradex-autosave.vbs via wscript.exe to avoid console flashes.
 [CmdletBinding()]
 param(
     [string]$GitExecutable = 'git',
@@ -12,6 +13,7 @@ $logPath = Join-Path $repository '.git\tradex-autosave.log'
 $allowedRoots = @(
     '.gitignore',
     'tradex-autosave.ps1',
+    'tradex-autosave.vbs',
     'tradex-global.css',
     'tradex-learning.css',
     'tradex-app.css',
