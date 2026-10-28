@@ -1,0 +1,156 @@
+@import url("dashboard.css");
+
+:root {
+    color-scheme: dark;
+    font-family: "Varela Round", sans-serif;
+    background: #000;
+    color: #fff;
+    --surface: #000;
+    --border: #666;
+    --muted: #b8c8d0;
+    --green: #35d66f;
+    --red: #ff6262;
+}
+
+body {
+    padding-top: 104px;
+    background: #000;
+    font-family: "Varela Round", sans-serif;
+}
+
+.site-header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 76px;
+    padding: 8px 24px;
+    border-bottom: 2px solid gray;
+    background: #000;
+}
+
+.brand {
+    color: lightskyblue;
+    font-size: 42px;
+    letter-spacing: 0;
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px 24px;
+}
+
+.top-nav a {
+    color: white;
+}
+
+.top-nav a:hover {
+    color: yellow;
+}
+
+.dashboard-layout {
+    width: min(1200px, 100%);
+    gap: 24px;
+}
+
+.search-sidebar,
+.panel {
+    border: 3px solid gray;
+    border-radius: 24px;
+    background: #000;
+    box-shadow: 8px 8px cyan;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-sidebar:hover,
+.panel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px cyan;
+}
+
+.search-sidebar h2,
+.search-sidebar h3,
+.dashboard-heading h1,
+.section-heading h2,
+.header-stock {
+    color: cyan;
+}
+
+.search-sidebar {
+    padding: 22px 18px;
+}
+
+.search-controls input {
+    border-color: gray;
+    background: #101010;
+}
+
+.search-controls button {
+    border: 1px solid cyan;
+    background: #071719;
+}
+
+.search-controls button:hover {
+    background: #123235;
+}
+
+.market-summary,
+.market-summary p,
+#watchlist-table th,
+#watchlist-table td {
+    border-color: #373737;
+}
+
+.status-dot {
+    background: cyan;
+    box-shadow: 0 0 10px #00ffff77;
+}
+
+.chart-plot {
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 64px, #303030 65px, transparent 66px);
+}
+
+.chart-line {
+    stroke: cyan;
+}
+
+.chart-area {
+    fill: url(#chart-fill);
+}
+
+.positive {
+    color: #35d66f;
+}
+
+.negative {
+    color: #ff6262;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding-top: 132px;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        padding-top: 142px;
+    }
+
+    .site-header {
+        padding: 8px 16px;
+    }
+
+    .brand {
+        font-size: 36px;
+    }
+
+    .top-nav {
+        justify-content: flex-start;
+        gap: 8px 16px;
+        font-size: 13px;
+    }
+}

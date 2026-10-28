@@ -1,0 +1,227 @@
+@import url("../ETF.html/etf.css");
+
+.tech-stock-page {
+    display: grid;
+    width: min(100%, 1100px);
+    gap: 22px;
+    margin: 28px auto 0;
+}
+
+.demo-notice {
+    margin: 0;
+    padding: 12px 16px;
+    border: 1px solid cyan;
+    border-radius: 12px;
+    background: #071719;
+    color: #d8faff;
+    font-size: 14px;
+}
+
+.tech-stock-card {
+    min-width: 0;
+    padding: clamp(18px, 4vw, 30px);
+    border: 2px solid gray;
+    border-radius: 24px;
+    background: #050505;
+    box-shadow: 6px 6px cyan;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-stock-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px cyan;
+}
+
+.tech-stock-overview,
+.tech-stock-section-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.tech-stock-eyebrow {
+    margin: 0 0 8px;
+    color: #b8c8d0;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.tech-stock-overview h1,
+.tech-stock-section-heading h2 {
+    margin: 0;
+    color: cyan;
+}
+
+.tech-stock-overview h1 {
+    font-size: clamp(26px, 5vw, 38px);
+}
+
+.tech-stock-symbol {
+    margin: 8px 0 0;
+    color: #d8faff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tech-stock-symbol span {
+    margin-left: 6px;
+    padding: 3px 7px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    color: #b8c8d0;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+}
+
+.tech-stock-quote {
+    text-align: right;
+}
+
+.tech-stock-price {
+    margin: 0;
+    font-size: clamp(26px, 5vw, 36px);
+    font-weight: 700;
+}
+
+.tech-stock-change {
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+.positive {
+    color: #35d66f;
+}
+
+.tech-stock-chart-section {
+    margin-top: 30px;
+}
+
+.tech-stock-section-heading {
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.tech-stock-section-heading h2 {
+    font-size: 20px;
+}
+
+.demo-badge {
+    padding: 6px 10px;
+    border: 1px solid gray;
+    border-radius: 999px;
+    color: #b8c8d0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.tech-stock-chart {
+    position: relative;
+    height: 250px;
+    padding: 4px 0 26px 44px;
+}
+
+.tech-stock-chart-labels {
+    position: absolute;
+    top: 8px;
+    bottom: 38px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #b8c8d0;
+    font-size: 11px;
+}
+
+.tech-stock-chart-plot {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #373737;
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 62px, #303030 63px, transparent 64px);
+}
+
+.tech-stock-chart-area {
+    fill: url(#demo-chart-fill);
+}
+
+.tech-stock-chart-line {
+    fill: none;
+    stroke: cyan;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    vector-effect: non-scaling-stroke;
+}
+
+.tech-stock-chart-times {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 44px;
+    display: flex;
+    justify-content: space-between;
+    color: #b8c8d0;
+    font-size: 11px;
+}
+
+.tech-stock-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 20px;
+    margin: 0;
+}
+
+.tech-stock-stat {
+    min-width: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #373737;
+}
+
+.tech-stock-stat dt {
+    margin-bottom: 8px;
+    color: #b8c8d0;
+    font-size: 13px;
+}
+
+.tech-stock-stat dd {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .tech-stock-page {
+        margin-top: 22px;
+    }
+
+    .tech-stock-overview {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tech-stock-quote {
+        text-align: left;
+    }
+
+    .tech-stock-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 14px;
+    }
+
+    .tech-stock-chart {
+        height: 210px;
+    }
+}
+
+@media (max-width: 360px) {
+    .tech-stock-chart {
+        padding-left: 38px;
+    }
+
+    .tech-stock-chart-times {
+        left: 38px;
+        font-size: 9px;
+    }
+}

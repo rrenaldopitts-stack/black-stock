@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 390" fill="none">
+  <title>Soul / Black American heritage flag</title>
+  <desc>A stylized flag based on the supplied reference, with a black center, red side panels, and a gold sword and wreath emblem. The fabric gently waves beside a silver flagpole.</desc>
+  <style>
+    .fabric { transform-origin: 66px 80px; animation: wave 5s ease-in-out infinite; }
+    .sheen { opacity: .35; animation: light 5s ease-in-out infinite; }
+    @keyframes wave {
+      0%, 100% { transform: skewY(-1deg) scaleX(1); }
+      50% { transform: skewY(2deg) scaleX(.96); }
+    }
+    @keyframes light {
+      0%, 100% { opacity: .25; }
+      50% { opacity: .65; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .fabric, .sheen { animation: none; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="pole" x1="48" y1="0" x2="62" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#61747d"/>
+      <stop offset=".45" stop-color="#e3edf0"/>
+      <stop offset="1" stop-color="#7c9098"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="67" y1="80" x2="438" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".2" stop-color="#fff" stop-opacity=".16"/>
+      <stop offset=".43" stop-color="#000" stop-opacity=".4"/>
+      <stop offset=".66" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".84" stop-color="#000" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="185" y1="117" x2="318" y2="254" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f9e775"/>
+      <stop offset=".5" stop-color="#dbc03d"/>
+      <stop offset="1" stop-color="#edce50"/>
+    </linearGradient>
+    <path id="cloth" d="M65 68C124 48 163 91 226 75S345 54 436 76L427 285C350 263 305 299 236 281S126 268 65 289Z"/>
+    <clipPath id="flag-clip"><use href="#cloth"/></clipPath>
+    <path id="leaf" d="M0 0C-10-2-17-13-13-22C-3-19 3-9 0 0Z"/>
+    <g id="wreath-half">
+      <path d="M244 239C197 228 182 180 204 137" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+      <g fill="url(#gold)">
+        <use href="#leaf" transform="translate(233 235) rotate(-50)"/>
+        <use href="#leaf" transform="translate(220 228) rotate(-67)"/>
+        <use href="#leaf" transform="translate(208 217) rotate(-79)"/>
+        <use href="#leaf" transform="translate(198 202) rotate(-91)"/>
+        <use href="#leaf" transform="translate(193 185) rotate(-104)"/>
+        <use href="#leaf" transform="translate(193 168) rotate(-118)"/>
+        <use href="#leaf" transform="translate(198 151) rotate(-132)"/>
+        <use href="#leaf" transform="translate(224 232) rotate(26) scale(.8)"/>
+        <use href="#leaf" transform="translate(211 222) rotate(10) scale(.8)"/>
+        <use href="#leaf" transform="translate(201 209) rotate(-4) scale(.8)"/>
+        <use href="#leaf" transform="translate(195 193) rotate(-18) scale(.8)"/>
+        <use href="#leaf" transform="translate(192 177) rotate(-31) scale(.8)"/>
+        <use href="#leaf" transform="translate(194 161) rotate(-44) scale(.8)"/>
+        <use href="#leaf" transform="translate(201 143) rotate(-48) scale(.7)"/>
+      </g>
+    </g>
+  </defs>
+  <ellipse cx="246" cy="354" rx="194" ry="12" fill="#00ffff" opacity=".06"/>
+  <path d="M54 42V353" stroke="url(#pole)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="54" cy="36" r="10" fill="url(#pole)" stroke="#b4c6cd" stroke-width="2"/>
+  <path d="M40 354H69" stroke="#8da5af" stroke-width="5" stroke-linecap="round"/>
+  <g class="fabric">
+    <use href="#cloth" fill="#171519"/>
+    <g clip-path="url(#flag-clip)">
+      <path d="M65 48L159 284L65 310Z" fill="#dd172d"/>
+      <path d="M339 47L452 62L432 309Z" fill="#dd172d"/>
+      <path d="M65 68C124 48 163 91 226 75S345 54 436 76" stroke="#fff" stroke-opacity=".1" stroke-width="3"/>
+      <g>
+        <use href="#wreath-half"/>
+        <use href="#wreath-half" transform="translate(500 0) scale(-1 1)"/>
+        <path d="M250 132L245 181L250 190L255 181Z" fill="url(#gold)"/>
+        <path d="M250 136V184" stroke="#fff1a2" stroke-width="1"/>
+        <path d="M238 190Q250 196 262 190M250 194V218M245 200H255M246 207H254" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M250 218L246 224H254Z" fill="url(#gold)"/>
+        <path d="M237 240L262 254M263 240L238 254" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <use class="sheen" href="#cloth" fill="url(#fold)"/>
+      <path d="M65 284C125 265 166 268 236 281S350 263 427 285" stroke="#000" stroke-opacity=".25" stroke-width="4"/>
+    </g>
+    <use href="#cloth" stroke="#68747a" stroke-opacity=".3" stroke-width="1"/>
+  </g>
+</svg>

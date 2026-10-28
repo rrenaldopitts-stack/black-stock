@@ -1,0 +1,37 @@
+# Track only the TradeX project in this shared workspace.
+/*
+!/.gitignore
+!/tradex-global.css
+!/tradex-learning.css
+!/stock-option-demo.css
+!/workspace stock market.code-workspace
+!/100 most popular/
+!/Altcoins/
+!/Cannabis/
+!/Daily movers/
+!/dashboard/
+!/Early dividend stocks/
+!/Energy/
+!/ETF.html/
+!/homepage/
+!/images/
+!/IPO Access/
+!/Newly listed crypto/
+!/stock market/
+!/Tech,media,& telecom/
+!/Technology/
+!/Tradeable crypto/
+!/Upcoming earnings/
+
+# Keep credentials, generated files, and local dependencies out of Git.
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/node_modules/
+**/.next/
+**/*.log
+**/*.err
+**/Thumbs.db
+**/Desktop.ini
+**/.DS_Store

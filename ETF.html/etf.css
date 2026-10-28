@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 96px 24px 40px;
+    background-color: black;
+    color: white;
+    font-family: "Varela Round", sans-serif;
+}
+
+.header {
+    background-color: black;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    border-bottom: 2px solid gray;
+    background-color: black;
+}
+
+.navbar .logo a {
+    color: aqua;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.navbar .logo abbr {
+    text-decoration: none;
+}
+
+.navbar .logo a:hover {
+    color: aqua;
+}
+
+.search-bar {
+    padding-right: 30px;
+}
+
+.search-input {
+    width: 200px;
+    height: 28px;
+    border: 0;
+    border-radius: 80px;
+    background-color: white;
+    padding: 0 12px;
+}
+
+.search-input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0 20px 0 0;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+.intro {
+    display: grid;
+    place-items: center;
+    width: min(100%, 640px);
+    min-height: 72px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 3px solid cyan;
+    border-radius: 24px;
+    background-color: black;
+    box-shadow: 8px 8px cyan;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.intro:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px cyan;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: inherit;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 120px 20px 32px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+
+    .navbar .logo a {
+        font-size: 40px;
+    }
+
+    .search-bar {
+        flex: 1;
+        padding-right: 0;
+    }
+
+    .nav-list {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 4px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 132px 16px 28px;
+    }
+
+    .navbar {
+        padding: 8px 16px;
+    }
+
+    .navbar .logo a {
+        font-size: 36px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .nav-list {
+        font-size: 14px;
+    }
+}

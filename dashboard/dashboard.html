@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive, data-ready stock market dashboard preview.">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Your Legacy Learning Lab | TradeX</title>
+    <link rel="stylesheet" href="../tradex-global.css">
+    <link rel="stylesheet" href="../tradex-learning.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-dashboard">Skip to content</a>
+    <div class="header">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo"><a href="../homepage/homepage.html" aria-label="TradeX home">TradeX</a></div>
+            <span class="learning-label">Culture. Community. Ownership.</span>
+            <ul class="nav-list"><li><a href="../homepage/homepage.html">Home</a></li><li><a href="../stock market/stock market project.html">Learn</a></li><li><a href="../homepage/homepage.html#culture">Culture</a></li><li><a href="../homepage/homepage.html#rewards">Rewards</a></li><li><a href="../ETF.html/etf.html">ETFs</a></li><li><a href="../homepage/homepage.html#stock-options-heading">Explore</a></li><li><a href="../dashboard/tradex-theme.html">Dashboard</a></li></ul>
+        </nav>
+    </div>
+
+    <div class="dashboard-layout">
+        <aside class="search-sidebar" aria-labelledby="search-heading">
+            <h2 id="search-heading">Your ownership toolkit</h2>
+            <p class="tx-small">No live prices or real trades. Start with a sample, then learn what the numbers mean.</p>
+            <nav class="tx-stack" aria-label="Practice examples">
+                <a href="../Technology/technology.html">Explore a sample stock &rarr;</a>
+                <a href="../ETF.html/etf.html">Explore a sample ETF &rarr;</a>
+                <a href="../stock market/stock market project.html#risk">Learn about risk &rarr;</a>
+            </nav>
+
+            <section class="market-summary" aria-labelledby="market-heading">
+                <h3 id="market-heading">Sample market snapshot</h3>
+                <p><span>S&amp;P 500</span><strong>5,234.18</strong><span class="positive">+0.82%</span></p>
+                <p><span>NASDAQ</span><strong>16,428.82</strong><span class="positive">+1.14%</span></p>
+                <p><span>DOW</span><strong>39,131.53</strong><span class="negative">−0.21%</span></p>
+            </section>
+        </aside>
+
+        <main class="main-dashboard" id="main-dashboard">
+            <section class="dashboard-heading" aria-labelledby="dashboard-title">
+                <div>
+                    <p class="eyebrow">Black financial futures / Sample data</p>
+                    <h1 id="dashboard-title">Your legacy learning lab</h1>
+                </div>
+                <p class="market-status"><span class="status-dot" aria-hidden="true"></span>Demo only</p>
+            </section>
+            <p class="tx-note">All quotes and index values below are illustrative, not live. Today's sample gain does not predict future performance. Your mission: compare price changes without treating them as buy or sell signals.</p>
+
+            
+            <section class="tx-culture-lab" aria-labelledby="legacy-lab-heading">
+                <div class="tx-culture-lab-copy">
+                    <p class="tx-eyebrow">Community knowledge / Individual choices</p>
+                    <h2 id="legacy-lab-heading">Your goals belong beside the numbers.</h2>
+                    <p>A Black-centered financial future can mean security, creative freedom, time with loved ones, or room to build a business. Use this lab to understand the numbers, not to compare your life with someone else's balance.</p>
+                    <a href="../stock market/stock market project.html#plan">Connect your learning to your own plan &rarr;</a>
+                </div>
+            </section>
+            <section class="tx-card tx-legacy-reflection" aria-labelledby="legacy-reflection-heading">
+                <p class="tx-eyebrow">Your legacy lens</p>
+                <h2 id="legacy-reflection-heading">What are you building toward?</h2>
+                <div class="tx-checklist" data-challenge-id="legacy-reflection">
+                    <label><input type="checkbox" name="legacy-security"><span>Understand my own financial foundation</span></label>
+                    <label><input type="checkbox" name="legacy-creative"><span>Make space for a creative or business goal</span></label>
+                    <label><input type="checkbox" name="legacy-community"><span>Share a lesson with someone in my circle</span></label>
+                </div>
+                <details><summary>A conversation before a comparison</summary><p>Ask what financial stability means to you. Family, chosen family, community, and personal security can matter in different ways. You set your priorities; a sample portfolio cannot do that for you.</p></details>
+                <p class="tx-small">Optional reflections only. Selections are not saved or used to recommend investments.</p>
+            </section>
+
+            <section class="featured-stock panel" aria-labelledby="ticker-symbol">
+                <div class="stock-heading">
+                    <div>
+                        <p class="eyebrow">Featured stock / Illustrative quote</p>
+                        <h2 id="ticker-symbol">AAPL <span>Apple Inc.</span></h2>
+                    </div>
+                    <p class="stock-price" id="stock-price">$189.84</p>
+                </div>
+                <p class="price-change positive" id="price-change">+$2.31 (1.23%) today</p>
+                <div class="chart" role="img" aria-label="Mock Apple stock price line chart trending upward during the day">
+                    <div class="chart-labels" aria-hidden="true">
+                        <span>$192</span>
+                        <span>$188</span>
+                        <span>$184</span>
+                    </div>
+                    <svg class="chart-plot" viewBox="0 0 720 220" preserveAspectRatio="none" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="chart-fill" x1="0" x2="0" y1="0" y2="1">
+                                <stop offset="0%" stop-color="#35d6a0" stop-opacity=".28"/>
+                                <stop offset="100%" stop-color="#35d6a0" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                        <path class="chart-area" d="M0 170 C40 160 52 175 90 148 S145 155 180 126 S230 144 270 110 S320 120 360 92 S410 115 450 75 S510 95 545 62 S610 88 650 45 S690 57 720 24 V220 H0 Z"/>
+                        <path class="chart-line" d="M0 170 C40 160 52 175 90 148 S145 155 180 126 S230 144 270 110 S320 120 360 92 S410 115 450 75 S510 95 545 62 S610 88 650 45 S690 57 720 24"/>
+                    </svg>
+                    <div class="chart-times" aria-hidden="true">
+                        <span>9:30 AM</span>
+                        <span>11:00 AM</span>
+                        <span>12:30 PM</span>
+                        <span>2:00 PM</span>
+                        <span>4:00 PM</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="watchlist panel" aria-labelledby="watchlist-heading">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Keep an eye on</p>
+                        <h2 id="watchlist-heading">Watch list</h2>
+                    </div>
+                    <span class="item-count">4 stocks</span>
+                </div>
+                <div class="watchlist-table-wrap">
+                    <table id="watchlist-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Company</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Today</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="watchlist-aapl">
+                                <th scope="row"><span class="ticker">AAPL</span><span class="company-name">Apple Inc.</span></th>
+                                <td>$189.84</td>
+                                <td class="positive">+1.23%</td>
+                            </tr>
+                            <tr id="watchlist-msft">
+                                <th scope="row"><span class="ticker">MSFT</span><span class="company-name">Microsoft</span></th>
+                                <td>$425.22</td>
+                                <td class="positive">+0.68%</td>
+                            </tr>
+                            <tr id="watchlist-nvda">
+                                <th scope="row"><span class="ticker">NVDA</span><span class="company-name">NVIDIA</span></th>
+                                <td>$875.28</td>
+                                <td class="positive">+2.41%</td>
+                            </tr>
+                            <tr id="watchlist-tsla">
+                                <th scope="row"><span class="ticker">TSLA</span><span class="company-name">Tesla</span></th>
+                                <td>$172.63</td>
+                                <td class="negative">−0.92%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="tx-footer">
+        <nav aria-label="Footer navigation"><a href="../homepage/homepage.html">TradeX home</a><a href="../stock market/stock market project.html">Investing lessons</a><a href="../homepage/homepage.html#culture">Culture &amp; community</a><a href="../homepage/homepage.html#rewards">Learning badges</a></nav>
+        <p>Rooted in Black culture. Growing through shared knowledge, community, and ownership. Open to every learner.</p>
+        <p>Education only, not personalized financial advice. Investing involves risk, including loss of principal. All market figures shown here are sample data, not live quotes. No real trades or cash rewards.</p>
+    </footer>
+</body>
+</html>
