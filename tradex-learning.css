@@ -238,6 +238,56 @@ main :is(h1, h2, h3, p, a, summary, legend, label, dt, dd) {
     gap: 18px;
 }
 
+.tx-mission-map {
+    margin-top: 32px;
+    padding: clamp(18px, 3vw, 28px);
+    border: 1px solid var(--tradex-border, #343a3d);
+    border-top: 3px solid var(--tradex-accent, cyan);
+    border-radius: 14px;
+    background: var(--tradex-surface, #101010);
+}
+
+.tx-mission-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 14px;
+    margin-block: 18px;
+}
+
+.tx-mission-links > a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px;
+    border: 1px solid #00e5e540;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #00e5e50d, transparent);
+    color: var(--tradex-accent, cyan);
+    text-decoration: none;
+}
+
+.tx-mission-links > a:hover,
+.tx-mission-links > a:focus-visible {
+    border-color: var(--tradex-accent, cyan);
+    background-color: #00e5e50d;
+}
+
+.tx-mission-links strong {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.tx-mission-links span,
+.tx-mission-map > .tx-small {
+    color: var(--tradex-muted, #b8c8d0);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+#business-check {
+    margin-top: 24px;
+}
+
 .tx-card {
     position: relative;
     min-width: 0;
