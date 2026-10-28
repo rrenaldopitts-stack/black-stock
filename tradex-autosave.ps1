@@ -29,6 +29,8 @@ $allowedRoots = @(
     'homepage/',
     'culture/',
     'numbers/',
+    'practice/',
+    'rewards/',
     'images/',
     'IPO Access/',
     'Newly listed crypto/',

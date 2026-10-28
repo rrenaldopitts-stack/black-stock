@@ -237,10 +237,10 @@ body.tx-app {
 .tx-journey-path {
     position: relative;
     display: grid;
-    gap: 30px;
+    gap: 20px;
     max-width: 650px;
     margin: 0 auto;
-    padding: 38px 12px;
+    padding: 24px 12px;
     list-style: none;
 }
 
@@ -267,8 +267,8 @@ body.tx-app {
 
 .tx-journey-node {
     display: grid;
-    width: 72px;
-    height: 72px;
+    width: 56px;
+    height: 56px;
     place-items: center;
     border: 3px solid #34858d;
     border-bottom-width: 8px;
@@ -284,7 +284,7 @@ body.tx-app {
 .tx-journey-card {
     position: relative;
     width: 100%;
-    padding: 20px;
+    padding: 16px;
     border: 2px solid var(--tradex-border);
     border-radius: 14px;
     background: #141a1c;
@@ -477,6 +477,61 @@ body.tx-app {
 
 .tx-app .tx-footer {
     padding: 24px var(--tradex-gutter);
+}
+
+.tx-compact-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 12px;
+}
+
+.tx-compact-links a {
+    display: flex;
+    min-height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    padding: 14px 18px;
+    border: 1px solid var(--tradex-border);
+    border-radius: 12px;
+    background: var(--tradex-surface);
+    color: var(--tradex-accent);
+    text-decoration: none;
+}
+
+.tx-compact-links span {
+    color: var(--tradex-muted);
+    font-size: 12px;
+}
+
+.tx-compact-note {
+    padding: 16px;
+    border: 1px solid var(--tradex-border);
+    border-radius: 12px;
+    background: var(--tradex-surface);
+}
+
+.tx-compact-note > summary {
+    color: var(--tradex-accent);
+    cursor: pointer;
+}
+
+.tx-app .tx-footer > details {
+    grid-column: 1 / -1;
+    font-size: 12px;
+}
+
+.tx-course .tx-view-lesson > :is(#risk, #plan) {
+    display: none;
+}
+
+.tx-course .tx-view-lesson:has(#risk:target, #risk :target, #plan:target, #plan :target) > #ownership {
+    display: none;
+}
+
+.tx-course .tx-view-lesson > :is(#risk, #plan):target,
+.tx-course .tx-view-lesson > :is(#risk, #plan):has(:target) {
+    display: block;
 }
 
 @media (max-width: 600px) {
