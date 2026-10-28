@@ -422,6 +422,40 @@ body.tx-app {
     gap: 20px;
 }
 
+.tx-community-lens {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 18px;
+    padding: 14px 18px;
+    border: 1px solid var(--accent, #00e5e5);
+    border-radius: 16px;
+    background: #101e23;
+    color: #f4f7f8;
+}
+
+.tx-community-lens img {
+    flex: 0 0 96px;
+    width: 96px;
+    height: 78px;
+    object-fit: contain;
+}
+
+.tx-community-lens p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.tx-community-lens a {
+    color: #00e5e5;
+    text-underline-offset: 3px;
+}
+
+.tx-community-lens div {
+    min-width: 0;
+}
+
 .tx-community-art {
     width: 100%;
     height: auto;
@@ -430,6 +464,17 @@ body.tx-app {
 }
 
 @media (max-width: 700px) {
+    .tx-community-lens {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .tx-community-lens img {
+        flex-basis: 64px;
+        width: 64px;
+        height: 64px;
+    }
+
     .tx-app .tx-home-community {
         grid-template-columns: minmax(0, 1fr);
         gap: 12px;
