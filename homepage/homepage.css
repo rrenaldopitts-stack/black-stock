@@ -2414,6 +2414,7 @@ body.tx-app {
     background: var(--tradex-surface);
     color: var(--tradex-accent);
     text-decoration: none; 
+    box-shadow: 0 4px 6px var(--tradex-accent);
 }
 
 .tx-compact-links {
