@@ -1,9 +1,9 @@
 const tipButton = document.querySelector('#tip-button');
-const tipText = document.querySelector('#tip');
+const tipText = document.querySelector('#tips');
 
 
 
-const showTp = () =>{
+const showTip = () =>{
 tipText.innerHTML = 'Understand the risks before investing.';
 }
 tipButton.addEventListener('click',showTip)
