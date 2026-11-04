@@ -21,5 +21,4 @@ function updatePrice() {
 updatePrice();
 
 // 5. Add an Event Listener so clicking the button updates the price
-refreshButton.addEventListener("click", updatePrice);a
-vifkvbkfokfkfvgfjkjvkvjkgffghghttttrrg
+refreshButton.addEventListener("click", updatePrice);
