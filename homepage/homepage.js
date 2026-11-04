@@ -1,5 +1,4 @@
 const readMore = document.getElementsByClassName('.info');
-let moreInfo = document.getElementsByClassName('.more-info');
 
 
 const showInfo = () =>{
