@@ -2418,7 +2418,7 @@ body.tx-app {
     transition: transform 1s ease, box-shadow 1s ease;
 }
 #tip-button:hover {
-    transform: translate(-4px -4px); /* Moves button up by 4 pixels */
+    transform: translate(4px ,4px); /* Moves button up by 4 pixels */
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.15); /* Deepens shadow */
   }
 
@@ -2441,7 +2441,9 @@ body.tx-app {
     color: var(--tradex-accent);
     text-decoration: none;
 }
-
+.tx-compact- :hover {
+    background-image: linear-gradient(to right, #007bff, #00c6ff);
+}
 .tx-compact-links span {
     color: var(--tradex-muted);
     font-size: 12px;
