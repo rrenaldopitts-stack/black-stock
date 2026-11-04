@@ -1,7 +1,9 @@
-const readMore = document.getElementsByClassName('.info');
+const tipButton = document.querySelector('#tip-button');
+const tipText = document.querySelector('#tip');
+
 
 
 const showInfo = () =>{
 console.log('You clicked About tradeX')
 }
-readMore.addEventListener('click',showInfo)
+tip.addEventListener('click',showInfo)
