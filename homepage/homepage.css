@@ -2441,7 +2441,7 @@ body.tx-app {
     color: var(--tradex-accent);
     text-decoration: none;
 }
-.tx-compact- :hover {
+.tx-compact-links :hover {
     background-image: linear-gradient(to right, #007bff, #00c6ff);
 }
 .tx-compact-links span {
