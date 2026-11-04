@@ -2418,7 +2418,7 @@ body.tx-app {
     transition: transform 1s ease, box-shadow 1s ease;
 }
 #tip-button:hover {
-    transform: translateY(14px); /* Moves button up by 4 pixels */
+    transform: translateY(-4px); /* Moves button up by 4 pixels */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15); /* Deepens shadow */
   }
 
