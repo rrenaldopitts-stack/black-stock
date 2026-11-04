@@ -2414,12 +2414,12 @@ body.tx-app {
     background: var(--tradex-surface);
     color: var(--tradex-accent);
     text-decoration: none; 
-    box-shadow: 10px 4px 6px var(--tradex-accent);
+    box-shadow: 10px 4px var(--tradex-accent);
     transition: transform 1s ease, box-shadow 1s ease;
 }
 #tip-button:hover {
-    transform: translateY(-4px); /* Moves button up by 4 pixels */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15); /* Deepens shadow */
+    transform: translate(-4px -4px); /* Moves button up by 4 pixels */
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.15); /* Deepens shadow */
   }
 
 .tx-compact-links {
