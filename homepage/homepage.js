@@ -3,7 +3,7 @@ const tipText = document.querySelector('#tip');
 
 
 
-const showInfo = () =>{
-console.log('You clicked About tradeX')
+const showTp = () =>{
+tipText.innerHTML = 'Understand the risks before investing.';
 }
-tip.addEventListener('click',showInfo)
+tipButton.addEventListener('click',showTip)
