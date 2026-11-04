@@ -1,8 +1,8 @@
-let readMore = document.getElementsByClassName('info');
-let moreInfo = document.getElementsByClassName('more-info');
+const readMore = document.getElementsByClassName('.info');
+let moreInfo = document.getElementsByClassName('.more-info');
 
 
 const showInfo = () =>{
- moreInfo.style.display = 'block' 
+console.log('You clicked About tradeX')
 }
 readMore.addEventListener('click',showInfo)
