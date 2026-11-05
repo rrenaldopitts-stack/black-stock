@@ -2440,9 +2440,13 @@ body.tx-app {
     background: var(--tradex-surface); /* Beginner note: Controls the element background color or image. */
     color: var(--tradex-accent); /* Beginner note: Sets the text or foreground color. */
     text-decoration: none; /* Beginner note: Controls text alignment or decoration. */
+    box-shadow: 8px 6px var(--tradex-accent);
+    transition: transform 180ms ease, box-shadow 180ms ease;
 }
 .tx-compact-links a :hover {
-    
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 229, 229, 0.22);
+    background: var(--trade-surface-raised)
 }
 .tx-compact-links span {
     color: var(--tradex-muted); /* Beginner note: Sets the text or foreground color. */
