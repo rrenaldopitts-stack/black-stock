@@ -1,171 +1,309 @@
+<!-- Beginner note: Tells the browser to use modern HTML rules. -->
 <!DOCTYPE html>
+<!-- Beginner note: Root element for the page; lang helps browsers and assistive technology identify its language. Its id can be a jump-link target or a hook used by JavaScript. -->
 <html lang="en" id="page-top">
+<!-- Beginner note: Page setup: metadata and links to styles or scripts belong here, not in visible page content. -->
 <head>
+    <!-- Beginner note: Sets text encoding so punctuation and special characters display correctly. -->
     <meta charset="UTF-8">
+    <!-- Beginner note: Makes the page use the device screen width so the layout can adapt to phones. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Beginner note: Provides a short summary that search engines and link previews may show. -->
     <meta name="description" content="Three beginner investing quests for Black financial confidence: stock ownership, diversification, and a long-term plan.">
+    <!-- Beginner note: Loads this page's local CSS file, connecting the HTML to its visual styles. -->
     <link rel="stylesheet" href="stock market project.css">
+    <!-- Beginner note: Asks the browser to prepare a connection to the font service before it is needed. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Beginner note: Asks the browser to prepare a connection to the font service before it is needed. -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Beginner note: Loads the Varela Round web font used by the page. -->
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- Beginner note: Sets the page title shown in the browser tab and bookmarks. -->
     <title>Culture to Capital: Your First Quests | TradeX</title>
 </head>
+<!-- Beginner note: Contains the content visitors can see and interact with. Its class names connect this markup to matching CSS selectors. -->
 <body class="tx-app">
+    <!-- Beginner note: Creates a link; href tells the browser which page or section to open. Its class names connect this markup to matching CSS selectors. -->
     <a class="skip-link" href="#learning-main">Skip to content</a>
+    <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
     <div class="header">
+        <!-- Beginner note: Groups navigation links; its accessible label tells screen-reader users what the links are for. Its class names connect this markup to matching CSS selectors. The ARIA label gives assistive technology an accessible name. -->
         <nav class="navbar" aria-label="Main navigation">
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="logo"><a href="../homepage/homepage.html#page-top" aria-label="TradeX home">TradeX</a></div>
+            <!-- Beginner note: A small inline container, often used to style part of a line without starting a new one. Its class names connect this markup to matching CSS selectors. -->
             <span class="learning-label">Black culture. Community. Ownership.</span>
+            <!-- Beginner note: Groups related list items without implying that they must be followed in order. Its class names connect this markup to matching CSS selectors. -->
             <ul class="nav-list"><li><a href="../homepage/homepage.html#page-top">Home</a></li><li><a href="../stock market/stock market project.html#page-top" aria-current="page">Learn</a></li><li><a href="../culture/culture.html#page-top">Culture</a></li><li><a href="../explore/explore.html#page-top">Explore</a></li><li><a href="../practice/practice.html#page-top">Practice</a></li></ul>
 
         </nav>
     </div>
+    <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
     <div class="tx-app-bar">
+        <!-- Beginner note: A neutral container used to group elements for layout or styling. -->
         <div><p class="tx-eyebrow">TradeX / Black futures. Shared knowledge.</p><p class="tx-app-location">Investing foundations</p></div>
+        <!-- Beginner note: Creates a link; href tells the browser which page or section to open. -->
         <a href="../stock market/stock market project.html#ownership">Start a learning quest &rarr;</a>
     </div>
+    <!-- Beginner note: Marks the primary content of the page; a page should have one main region. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
     <main class="tx-page tx-course" id="learning-main" data-course-id="foundations">
+        <!-- Beginner note: Provides supporting information related to the nearby main content. Its class names connect this markup to matching CSS selectors. The ARIA label gives assistive technology an accessible name. -->
         <aside class="tx-community-lens" aria-label="Black-centered learning perspective">
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. -->
             <div><p><strong>Black futures. Start with understanding.</strong></p><p>Learn ownership, risk, and planning through questions about Black businesses, creative work, and your own goals. Supporting a business and owning its shares are different things.</p><a href="../culture/culture.html#black-business">Explore Black business &amp; culture &rarr;</a></div>
         </aside>
+        <!-- Beginner note: Groups related content under one topic; a heading should explain the topic. Its class names connect this markup to matching CSS selectors. The ARIA label gives assistive technology an accessible name. -->
         <section class="tx-journey" aria-labelledby="journey-heading">
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="tx-chapter">
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-eyebrow">TradeX learning journey / Your pace, your path</p>
+                <!-- Beginner note: The main page heading; normally each page has one h1. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <h1 id="journey-heading">Your investing foundations</h1>
+                <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
                 <div class="tx-chapter-track" aria-hidden="true"><span></span><span></span><span></span></div>
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-small">3 learning stops. Select a numbered node, then Continue. This map does not track completion or save progress.</p>
             </div>
+            <!-- Beginner note: Groups list items whose order matters, such as steps in a learning path. Its class names connect this markup to matching CSS selectors. -->
             <ol class="tx-journey-path">
+                <!-- Beginner note: One item in the surrounding list. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <li id="journey-stop-1"><a class="tx-journey-node" href="#journey-stop-1" aria-label="Show learning stop 1">01</a><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 01</p><h3>Think like an owner</h3><p>Learn what a share does and does not give you.</p><a class="tx-button" href="#ownership" aria-label="Continue to Think like an owner">Continue &rarr;</a></article></li>
+                <!-- Beginner note: One item in the surrounding list. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <li id="journey-stop-2"><a class="tx-journey-node" href="#journey-stop-2" aria-label="Show learning stop 2">02</a><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 02</p><h3>Play the long game</h3><p>Understand risk, diversification, and fees.</p><a class="tx-button" href="#risk" aria-label="Continue to Play the long game">Continue &rarr;</a></article></li>
+                <!-- Beginner note: One item in the surrounding list. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <li id="journey-stop-3"><a class="tx-journey-node" href="#journey-stop-3" aria-label="Show learning stop 3">03</a><article class="tx-journey-card"><p class="tx-eyebrow">Learning stop 03</p><h3>Make your game plan</h3><p>Connect your learning to your own goals.</p><a class="tx-button" href="#plan" aria-label="Continue to Make your game plan">Continue &rarr;</a></article></li>
             </ol>
         </section>
         <!-- Future progress key: course ID + quiz ID. Restore input.checked so CSS feedback and badges stay in sync; progress is not persisted yet. -->
+        <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
         <div class="tx-workspace">
+            <!-- Beginner note: Groups navigation links; its accessible label tells screen-reader users what the links are for. Its class names connect this markup to matching CSS selectors. The ARIA label gives assistive technology an accessible name. -->
             <nav class="tx-view-nav" aria-label="Learning workspace views">
+                <!-- Beginner note: Creates a link; href tells the browser which page or section to open. -->
                 <a href="#lesson-view">Lesson</a><a href="#check-view">Knowledge check</a><a href="#practice-view">Practice example</a>
             </nav>
+            <!-- Beginner note: Groups related content under one topic; a heading should explain the topic. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. The ARIA label gives assistive technology an accessible name. -->
             <section class="tx-view-panel tx-view-lesson" id="lesson-view" aria-labelledby="lesson-view-heading">
+                <!-- Beginner note: A second-level heading that introduces a major section. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <h2 id="lesson-view-heading">Learn the idea</h2>
+<!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. Its class names connect this markup to matching CSS selectors. -->
 <details class="tx-compact-note"><summary>About this beginner course</summary>        <section class="tx-hero" aria-labelledby="course-heading">
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="tx-hero-copy">
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-eyebrow">Level 01 / The foundation</p>
+                <!-- Beginner note: A second-level heading that introduces a major section. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <h2 id="course-heading">Rooted in culture.<br><span>Growing in knowledge.</span></h2>
+                <!-- Beginner note: Groups a paragraph of readable page text. -->
                 <p>Black creativity, entrepreneurship, and community are part of the ownership conversation. Connect those ideas to stock-market basics with three short quests. Bring your story; build your understanding.</p>
+                <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
                 <div class="tx-actions"><a class="tx-button" href="#ownership">Begin quest 01 &rarr;</a><a class="tx-button tx-button-secondary" href="#badge-shelf">Your badge shelf</a></div>
             </div>
         </section></details>
+        <!-- Beginner note: Groups navigation links; its accessible label tells screen-reader users what the links are for. Its class names connect this markup to matching CSS selectors. The ARIA label gives assistive technology an accessible name. -->
         <nav class="tx-lesson-nav" aria-label="Lesson navigation">
+            <!-- Beginner note: Creates a link; href tells the browser which page or section to open. -->
             <a href="#ownership">01 / Ownership</a><a href="#risk">02 / Risk &amp; ETFs</a><a href="#plan">03 / Your game plan</a><a href="#resources">Keep learning</a>
         </nav>
+        <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
         <p class="tx-note">Your pace, your path. Badges appear below when you answer correctly. They are learning markers, not money or investment credentials. Answers and badges are not saved when you leave or reload.</p>
+        <!-- Beginner note: A self-contained item, such as one lesson, example, or card. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
         <article class="tx-lesson" id="ownership" data-quest-id="ownership">
+            <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
             <p class="tx-eyebrow">Quest 01 / About 5 minutes / Ownership badge</p>
+            <!-- Beginner note: A second-level heading that introduces a major section. -->
             <h2>Think like an owner.</h2>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p>A <strong>stock</strong> represents ownership in a company. A <strong>share</strong> is one unit of that stock. Buying a share makes you a small part-owner, not an employee and not someone the company promises to pay back.</p>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p>The stock market brings buyers and sellers together. Most everyday trades exchange existing shares between investors. A company can raise money by issuing new shares, such as through an initial public offering (IPO).</p>
+            <!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. -->
             <details><summary>A quick example: your slice of the business</summary><p>Imagine a fictional company with 1,000 equal shares. Owning 10 means owning 1% of those shares. If the price moves from $10 to $8, your 10 shares are worth $80 instead of $100. Ownership does not protect you from losses.</p></details>
+            <!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. Its id can be a jump-link target or a hook used by JavaScript. -->
             <details id="creative-ownership"><summary>Culture connection: a music royalty is not a stock share</summary><p>Black artists and entrepreneurs bring powerful ownership questions into music, film, fashion, and technology. Those questions can help you learn to ask: what asset would I actually own?</p><p>A music royalty is a payment tied to specific rights and agreements. A stock share represents equity in a company. Buying shares in a public entertainment company does not give you ownership of an artist's masters or a direct right to their royalties. Read what an investment actually grants, not just the story around it.</p></details>
+            <!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. -->
             <details><summary>From the block to the market: supporting a business versus owning shares</summary><p>Buying a book from a Black-owned bookstore supports its sales, but does not make you a shareholder. Many local businesses are privately held, and their ownership interests are not available on a public stock exchange. Supporting a business, starting one, and buying public shares are different paths with different responsibilities and risks.</p></details>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p>Investors may earn money if they sell shares for more than they paid, or if a company pays dividends. <strong>Neither is guaranteed.</strong> A stock can lose some or all of its value, and dividends can be reduced or stopped.</p>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p><a class="tx-button tx-button-secondary" href="#check-ownership">Check your understanding &rarr;</a></p>
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="tx-actions"><a class="tx-button tx-button-secondary" href="#risk">Next: play the long game &rarr;</a></div>
         </article>
+        <!-- Beginner note: A self-contained item, such as one lesson, example, or card. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
         <article class="tx-lesson" id="risk" data-quest-id="risk">
+            <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
             <p class="tx-eyebrow">Quest 02 / About 5 minutes / Risk-aware badge</p>
+            <!-- Beginner note: A second-level heading that introduces a major section. -->
             <h2>Play the long game.</h2>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p>Prices rise and fall. A one-day chart cannot tell you whether an investment fits your life. Your goals, how long you can leave money invested, and your ability to absorb losses matter more than a trending ticker.</p>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p><strong>Diversification</strong> means spreading investments across different holdings, industries, or asset types. It can reduce the impact of one investment doing poorly. It cannot eliminate market risk or guarantee a profit.</p>
+            <!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. -->
             <details><summary>What is an ETF?</summary><p>An exchange-traded fund (ETF) holds a basket of assets and trades on an exchange. A broad-market ETF may hold many companies, while a sector ETF may focus on one industry. Not every ETF is diversified: some are concentrated, leveraged, or designed for short-term strategies. Review the holdings, strategy, risks, and fees.</p></details>
+            <!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. -->
             <details><summary>What is compounding?</summary><p>Compounding is growth that can build on earlier growth when earnings remain invested. For illustration only, $100 growing at a hypothetical 5% annually becomes $105 after one year and $110.25 after two, before fees and taxes. Actual returns vary and can be negative. This example is not a forecast.</p></details>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p><strong>Fees matter.</strong> Fund expense ratios, account fees, and other costs can reduce returns. Compare the full costs, not just a commission-free label.</p>
+            <!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. -->
             <details><summary>Community connection: shared values still need independent research</summary><p>A business can reflect your identity or values and still be a risky investment. Representation matters, but it does not guarantee returns. Read the financial information and risks, and do not let an online group or someone you trust pressure you into an investment. Supporting Black enterprise and building a diversified portfolio are not the same decision.</p></details>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p><a class="tx-button tx-button-secondary" href="#check-risk">Check your understanding &rarr;</a></p>
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="tx-actions"><a class="tx-button tx-button-secondary" href="#plan">Next: make your game plan &rarr;</a><a class="tx-button tx-button-secondary" href="../ETF.html/etf.html">See a fictional ETF</a></div>
         </article>
+        <!-- Beginner note: A self-contained item, such as one lesson, example, or card. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
         <article class="tx-lesson" id="plan" data-quest-id="plan">
+            <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
             <p class="tx-eyebrow">Quest 03 / About 5 minutes / Game-plan badge</p>
+            <!-- Beginner note: A second-level heading that introduces a major section. -->
             <h2>Make your first game plan.</h2>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p>Building a legacy does not require rushing into a trade. A thoughtful first step may be learning more, building emergency savings, or addressing high-interest debt before investing.</p>
+            <!-- Beginner note: Groups list items whose order matters, such as steps in a learning path. -->
             <ol>
+                <!-- Beginner note: One item in the surrounding list. -->
                 <li><strong>Name your goal.</strong> What is the money for, and when might you need it? Money for near-term essentials may not belong in volatile stocks.</li>
+                <!-- Beginner note: One item in the surrounding list. -->
                 <li><strong>Check your foundation.</strong> Consider your essential expenses, emergency buffer, debt, and whether you can afford investment losses.</li>
+                <!-- Beginner note: One item in the surrounding list. -->
                 <li><strong>Understand your account.</strong> Learn the differences between taxable brokerage and retirement accounts, including eligibility, taxes, fees, and withdrawal rules.</li>
+                <!-- Beginner note: One item in the surrounding list. -->
                 <li><strong>Research before committing.</strong> Read disclosures and check a professional or firm's registration. Avoid anyone promising guaranteed high returns.</li>
             </ol>
+            <!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. -->
             <details><summary>Can I start with a small amount?</summary><p>Some brokerages offer fractional shares, letting you buy part of a share. Minimums, available investments, fees, and transfer rules vary. Starting small does not remove risk, and there is no obligation to invest before you are ready.</p></details>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p>Black wealth-building has a history that includes both community resilience and unequal access to financial opportunity. Better information is one tool, not a cure for structural barriers. Your pace and circumstances deserve respect.</p>
+            <!-- Beginner note: Creates a built-in disclosure that visitors can open or close without JavaScript. -->
             <details><summary>Your legacy, your definition</summary><p>Imagine what you want money to make possible: a secure retirement, space to create, a home, education, or support for family or chosen family. You do not have to carry everyone's future on your own. Choose a goal that respects both your values and your current needs.</p><p>Optional reflection: finish the sentence, "For me, building a legacy means..." Keep it private or share it with someone you trust. No response is collected here.</p></details>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p><a class="tx-button tx-button-secondary" href="#check-plan">Check your understanding &rarr;</a></p>
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="tx-actions"><a class="tx-button" href="#badge-shelf">See your badges &rarr;</a></div>
         </article>
+                <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
                 <div class="tx-actions"><a class="tx-button" href="#check-view">Try the knowledge check &rarr;</a></div>
             </section>
+            <!-- Beginner note: Groups related content under one topic; a heading should explain the topic. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. The ARIA label gives assistive technology an accessible name. -->
             <section class="tx-view-panel tx-view-check" id="check-view" aria-labelledby="check-view-heading">
+                <!-- Beginner note: A second-level heading that introduces a major section. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <h2 id="check-view-heading">Check your understanding</h2>
+            <!-- Beginner note: Groups related form controls, such as the choices in a knowledge check. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
             <fieldset id="check-ownership" class="tx-quiz" data-quiz-id="ownership" data-progress-kind="lesson">
+                <!-- Beginner note: Names the group of controls inside a fieldset. -->
                 <legend>Knowledge check / What does buying a share mean?</legend>
+                <!-- Beginner note: Names a form control; clicking the label can also activate its input. Its class names connect this markup to matching CSS selectors. -->
                 <label class="tx-answer"><input class="tx-incorrect" type="radio" name="ownership-answer" value="guarantee">The company guarantees my money will grow.</label>
+                <!-- Beginner note: Names a form control; clicking the label can also activate its input. Its class names connect this markup to matching CSS selectors. -->
                 <label class="tx-answer"><input class="tx-correct" id="quiz-ownership-correct" type="radio" name="ownership-answer" value="ownership">I own a small part of the company and take on investment risk.</label>
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-feedback tx-feedback-retry">Not quite. Share prices can fall. Look for the answer that describes ownership and risk, then try again.</p>
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-feedback tx-feedback-correct">Exactly. You are an owner, and returns are not promised. Ownership mindset badge unlocked for this page visit.</p>
             </fieldset>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p><a href="#ownership">Review the ownership lesson &rarr;</a></p>
+            <!-- Beginner note: Groups related form controls, such as the choices in a knowledge check. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
             <fieldset id="check-risk" class="tx-quiz" data-quiz-id="risk" data-progress-kind="lesson">
+                <!-- Beginner note: Names the group of controls inside a fieldset. -->
                 <legend>Knowledge check / What can diversification do?</legend>
+                <!-- Beginner note: Names a form control; clicking the label can also activate its input. Its class names connect this markup to matching CSS selectors. -->
                 <label class="tx-answer"><input class="tx-correct" id="quiz-risk-correct" type="radio" name="risk-answer" value="spread">Spread exposure, while still leaving the possibility of losses.</label>
+                <!-- Beginner note: Names a form control; clicking the label can also activate its input. Its class names connect this markup to matching CSS selectors. -->
                 <label class="tx-answer"><input class="tx-incorrect" type="radio" name="risk-answer" value="no-loss">Make it impossible to lose money.</label>
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-feedback tx-feedback-retry">Try again. Even a diversified portfolio can fall when the broader market declines.</p>
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-feedback tx-feedback-correct">You got it. Diversification is a risk-management tool, not a shield against every loss. Risk-aware learner badge unlocked.</p>
             </fieldset>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p><a href="#risk">Review the risk lesson &rarr;</a></p>
+            <!-- Beginner note: Groups related form controls, such as the choices in a knowledge check. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
             <fieldset id="check-plan" class="tx-quiz" data-quiz-id="plan" data-progress-kind="lesson">
+                <!-- Beginner note: Names the group of controls inside a fieldset. -->
                 <legend>Knowledge check / What is a thoughtful first step?</legend>
+                <!-- Beginner note: Names a form control; clicking the label can also activate its input. Its class names connect this markup to matching CSS selectors. -->
                 <label class="tx-answer"><input class="tx-incorrect" type="radio" name="plan-answer" value="hype">Use money for next month's rent to chase a trending stock.</label>
+                <!-- Beginner note: Names a form control; clicking the label can also activate its input. Its class names connect this markup to matching CSS selectors. -->
                 <label class="tx-answer"><input class="tx-correct" id="quiz-plan-correct" type="radio" name="plan-answer" value="readiness">Clarify my goal, financial readiness, time horizon, and risks.</label>
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-feedback tx-feedback-retry">Keep essential expenses protected. A trending investment can fall before you need that money. Try the other answer.</p>
+                <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
                 <p class="tx-feedback tx-feedback-correct">That is an intentional start. Your plan comes before the purchase. Game-plan badge unlocked.</p>
             </fieldset>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p><a href="#plan">Review the plan lesson &rarr;</a></p>
+        <!-- Beginner note: Groups related content under one topic; a heading should explain the topic. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. The ARIA label gives assistive technology an accessible name. -->
         <section class="tx-section tx-card" id="badge-shelf" aria-labelledby="badges-heading">
+            <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
             <p class="tx-eyebrow">Knowledge is the reward</p>
+            <!-- Beginner note: A second-level heading that introduces a major section. Its id can be a jump-link target or a hook used by JavaScript. -->
             <h2 id="badges-heading">Your foundation badge shelf.</h2>
+            <!-- Beginner note: Groups a paragraph of readable page text. -->
             <p>Answer each lesson correctly to reveal its badge here. Nothing is awarded for trading, spending, or taking more risk.</p>
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="tx-actions">
+                <!-- Beginner note: A small inline container, often used to style part of a line without starting a new one. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <span class="tx-badge tx-earned tx-earned-one" data-badge-id="ownership">01 / Ownership mindset</span>
+                <!-- Beginner note: A small inline container, often used to style part of a line without starting a new one. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <span class="tx-badge tx-earned tx-earned-two" data-badge-id="risk">02 / Risk-aware learner</span>
+                <!-- Beginner note: A small inline container, often used to style part of a line without starting a new one. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <span class="tx-badge tx-earned tx-earned-three" data-badge-id="plan">03 / Intentional planner</span>
             </div>
+            <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
             <p class="tx-finish">Foundation complete! Three checks, three badges. Your next move: explore a fictional investment with your new knowledge.</p>
+            <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
             <p class="tx-small">This shelf updates on this page only and resets on reload. No account or permanent progress is created.</p>
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="tx-actions"><a class="tx-button tx-button-secondary" href="../Technology/technology.html">Explore a sample stock &rarr;</a><a class="tx-button tx-button-secondary" href="#ownership">Revisit the lessons</a></div>
         </section>
+                <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
                 <div class="tx-actions"><a class="tx-button tx-button-secondary" href="#lesson-view">Review the lesson</a><a class="tx-button" href="#practice-view">Explore a practice example &rarr;</a></div>
             </section>
+            <!-- Beginner note: Groups related content under one topic; a heading should explain the topic. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. The ARIA label gives assistive technology an accessible name. -->
             <section class="tx-view-panel tx-view-practice" id="practice-view" aria-labelledby="practice-view-heading">
+                <!-- Beginner note: A second-level heading that introduces a major section. Its id can be a jump-link target or a hook used by JavaScript. -->
                 <h2 id="practice-view-heading">Practice without real trades</h2>
+                <!-- Beginner note: Groups a paragraph of readable page text. -->
                 <p>Apply the ideas with fictional market examples. These are not live accounts, quotes, or recommendations.</p>
+                <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
                 <div class="tx-grid-three">
+                    <!-- Beginner note: A self-contained item, such as one lesson, example, or card. Its class names connect this markup to matching CSS selectors. -->
                     <article class="tx-card"><h3>Read a stock quote</h3><p>Understand price changes without predicting returns.</p><a href="../Technology/technology.html#practice-view">Explore a fictional stock &rarr;</a></article>
+                    <!-- Beginner note: A self-contained item, such as one lesson, example, or card. Its class names connect this markup to matching CSS selectors. -->
                     <article class="tx-card"><h3>Look inside an ETF</h3><p>Consider holdings, fees, and concentration.</p><a href="../ETF.html/etf.html#practice-view">Explore a fictional ETF &rarr;</a></article>
+                    <!-- Beginner note: A self-contained item, such as one lesson, example, or card. Its class names connect this markup to matching CSS selectors. -->
                     <article class="tx-card"><h3>Build a personal plan</h3><p>Connect your goals, time horizon, and comfort with risk.</p><a href="#plan">Explore the planning lesson &rarr;</a></article>
                 </div>
+        <!-- Beginner note: Groups related content under one topic; a heading should explain the topic. Its class names connect this markup to matching CSS selectors. Its id can be a jump-link target or a hook used by JavaScript. The ARIA label gives assistive technology an accessible name. -->
         <section class="tx-section tx-resources" id="resources" aria-labelledby="resources-heading">
+            <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
             <div class="tx-heading-row"><div><p class="tx-eyebrow">Keep your curiosity</p><h2 id="resources-heading">Go deeper with trusted resources.</h2></div></div>
+            <!-- Beginner note: Groups related list items without implying that they must be followed in order. -->
             <ul>
+                <!-- Beginner note: One item in the surrounding list. -->
                 <li><a href="https://www.investor.gov/introduction-investing">Investor.gov: an introduction to investing</a></li>
+                <!-- Beginner note: One item in the surrounding list. -->
                 <li><a href="https://www.finra.org/investors/investing/investment-products/exchange-traded-funds-and-products">FINRA: understand ETFs and exchange-traded products</a></li>
+                <!-- Beginner note: One item in the surrounding list. -->
                 <li><a href="https://brokercheck.finra.org/">FINRA BrokerCheck: research a broker or firm</a></li>
             </ul>
+            <!-- Beginner note: Groups a paragraph of readable page text. Its class names connect this markup to matching CSS selectors. -->
             <p class="tx-note">Education only, not personalized financial, legal, or tax advice. Investing involves risk, including loss of principal. Historical results do not guarantee future returns. No investments are bought or sold through this site.</p>
         </section>
+                <!-- Beginner note: A neutral container used to group elements for layout or styling. Its class names connect this markup to matching CSS selectors. -->
                 <div class="tx-actions"><a class="tx-button tx-button-secondary" href="#check-view">Return to the knowledge check</a></div>
             </section>
         </div>
     </main>
+    <!-- Beginner note: Groups closing information and secondary links for a page or section. Its class names connect this markup to matching CSS selectors. -->
     <footer class="tx-footer">
+        <!-- Beginner note: Groups navigation links; its accessible label tells screen-reader users what the links are for. The ARIA label gives assistive technology an accessible name. -->
         <nav aria-label="Footer navigation"><a href="../homepage/homepage.html#page-top">TradeX home</a><a href="../stock market/stock market project.html#page-top">Investing lessons</a><a href="../culture/culture.html#page-top">Culture &amp; community</a><a href="../explore/explore.html#page-top">Explore examples</a><a href="../practice/practice.html#page-top">Practice</a></nav><details class="tx-compact-note"><summary>Education &amp; demo information</summary><p>Centered on Black people, Black businesses, and Black culture. Build financial understanding on your own terms. Open to every learner.</p>
+        <!-- Beginner note: Groups a paragraph of readable page text. -->
         <p>Education only, not personalized financial advice. Investing involves risk, including loss of principal. All market figures shown here are sample data, not live quotes. No real trades or cash rewards.</p>
     </details></footer>
 </body>
