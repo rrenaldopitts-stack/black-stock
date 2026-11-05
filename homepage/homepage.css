@@ -2441,8 +2441,8 @@ body.tx-app {
     color: var(--tradex-accent); /* Beginner note: Sets the text or foreground color. */
     text-decoration: none; /* Beginner note: Controls text alignment or decoration. */
 }
-.tx-compact-links :hover {
-    background-image: linear-gradient(to right, #007bff, #00c6ff); /* Beginner note: Controls the element background color or image. */
+.tx-compact-links a :hover {
+    
 }
 .tx-compact-links span {
     color: var(--tradex-muted); /* Beginner note: Sets the text or foreground color. */
