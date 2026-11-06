@@ -2443,10 +2443,10 @@ body.tx-app {
     box-shadow: 8px 6px var(--tradex-accent);
     transition: transform 180ms ease, box-shadow 180ms ease;
 }
-.tx-compact-links a :hover {
+.tx-compact-links a:hover ::before {
     transform: translateY(-4px);
     box-shadow: 0 12px 20px rgba(0, 229, 229, 0.22);
-    background: var(--trade-surface-raised)
+    background: var(--tradex-surface-raised);
 }
 .tx-compact-links span {
     color: var(--tradex-muted); /* Beginner note: Sets the text or foreground color. */
